@@ -1,0 +1,28 @@
+/*general settings
+* deco.stylus 
+* 装飾がいるとかいらないとかを主に取り扱います
+*
+*
+*/
+a {
+  text-decoration: none;
+  color: #223;
+}
+a :hover {
+  color: #884;
+  text-decoration: underline;
+}
+a :visited {
+  color: #624;
+}
+a :active {
+  color: #66d;
+}
+li.clickable {
+  text-decoration: none;
+  color: #000;
+}
+li.clickable :hover {
+  color: #884;
+  text-decoration: underline;
+}

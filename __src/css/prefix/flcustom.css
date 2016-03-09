@@ -1,0 +1,73 @@
+#hiddencontainer {
+  position: fixed;
+  display: none;
+  width: 1100px;
+  top: 10000px;
+}
+#hiddenmap {
+  position: fixed;
+  display: none;
+  width: 800px;
+  top: 10000px;
+}
+.lightbox {
+  width: 90%;
+  max-width: 1100px;
+}
+.stabilizer {
+  max-width: 1000px;
+  width: 95%;
+  padding-left: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flRight {
+  float: right;
+  width: 48%;
+  margin: 0 1%;
+  display: block;
+}
+.flLeft {
+  float: left;
+  width: 48%;
+  margin: 0 1%;
+}
+.flBottom {
+  float: left;
+  display: block;
+  width: 48%;
+  margin: 0 1%;
+}
+img.portStud {
+  float: right;
+  width: 40%;
+  max-height: 350px;
+}
+.tag {
+  text-align: right;
+  width: 50%;
+  max-height: 400px;
+  vertical-align: text-bottom;
+}
+.nameStud,
+.titleStud {
+  font-size: 1.2em;
+}
+.mediaStud {
+  font-size: 0.9em;
+}
+.cont {
+  padding-top: 30px;
+}
+.descStud {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  margin: 30px 10px;
+  line-height: 150%;
+  text-indent: 1em;
+}
+img.detailStud {
+  max-width: 500px;
+  width: 100%;
+}

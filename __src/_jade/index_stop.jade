@@ -1,0 +1,196 @@
+doctype html
+html
+head
+	meta(charset='UTF-8')
+	title 複眼思考 2016 - Simulacre
+	meta(name='Description', content='2015年度視覚伝達デザイン学科、陣内ゼミの卒業制作展示。')
+	meta(name='Keywords', content='視デ,視覚伝達デザイン,武蔵美,MAU,卒業制作,武蔵野美術大学')
+	meta(name='viewport', content='width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0')
+	link(rel='stylesheet', href='css/lib/featherlight.min.css')
+	link(rel='stylesheet', href='css/base.css')
+	link(async rel='stylesheet', type='text/css', media='screen and (min-device-width:701px)', href='css/pc.css')
+	link(async rel='stylesheet', type='text/css', media='only screen and (max-device-width:700px)', href='css/sp.css')
+	//if !IE | [if !IE]
+	link(async media='only screen and (max-device-width: 910px)', href='css/sp.css', type='text/css', rel='stylesheet')
+	// [endif]
+	script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+	script(src='js/lib/jquery.unveil.js')
+	script(src='js/setting.js')
+	script(src='//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js')
+body
+	#Wave_stop
+	//- #containerWrapper
+	//- 	#container
+	//- 		#top
+	//- 			a(name='top')
+	//- 			#titlecontainer
+	//- 				#title.leftblank
+	//- 					img.title(src='img/util/title.png')
+	//- 		.clSp.betblankMsp
+	//- 		#Lcol
+	//- 			#navContainer
+	//- 				#pointerL
+	//- 				ul#navbar
+	//- 					li#navTop.nav
+	//- 						a(href='#top')
+	//- 							|Simulacre
+	//- 					li#navIntro.nav
+	//- 						a(href='#intro')
+	//- 							|陣内利博		
+	//- 					li#navWorks.nav
+	//- 						a(href='#works')
+	//- 							|個人作品紹介
+	//- 					li#navAccess.nav.last
+	//- 						a(href='#access')
+	//- 							|アクセス
+	//- 		.clSp.betblankM
+	//- 		#Mcol
+	//- 			#rightcolumn
+	//- 				.clSp
+	//- 				#intro
+	//- 					a.anchor(name='intro')
+	//- 					div.edgeLine.edgeConcept
+	//- 					.clSp
+	//- 					div.accent.accentConcept
+	//- 						img.triple(src='img/util/triRipplehq.png')
+	//- 					div#concept
+	//- 						p#main メインテーマ
+	//- 						p#sub
+	//- 							br/
+	//- 							| 私たちに、決まった型は存在しない。
+	//- 							br/
+	//- 							br/
+	//- 							| ここで得た多くの学びは、
+	//- 							br/
+	//- 							| 分野の壁を打ち砕き、
+	//- 							br/
+	//- 							| より大きな学びを生み出す。
+	//- 							br/
+	//- 							| 私たちは自分を決めてしまう型を作らない。
+	//- 							br/
+	//- 							br/
+	//- 							| それはまるで、水のように。
+	//- 							br/
+	//- 							br/
+	//- 							| カタチをもたない水は、
+	//- 							br/
+	//- 							| じっくりと岩を削り、流れを生み、
+	//- 							br/
+	//- 							| 大地を潤し、実りを創る。
+	//- 							br/
+	//- 							| 水が生み出すものは、人を潤し、
+	//- 							br/
+	//- 							| 生きる力をも与える。
+	//- 							br/
+	//- 							br/
+	//- 							| 私たちは、流れる水のように
+	//- 							br/
+	//- 							| 変化する存在として、世界のどこかで、
+	//- 							br/
+	//- 							| 時間をかけながら流れを作り、
+	//- 							br/
+	//- 							| 人々の感性に共鳴し、
+	//- 							br/
+	//- 							| 心に沁みてゆく存在でありたい。
+	//- 					div.accent.accentKanji
+	//- 						img.kanji(src='img/util/orationhq.png')
+	//- 					div#oration
+	//- 						div#farewell
+	//- 							p 
+	//- 						p#signature 視覚伝達デザイン学科教授 陣内 利博
+	//- 				.clSp.betblankM
+	//- 				#professors
+	//- 					a.anchor(name='professors')
+	//- 					div.accent 
+	//- 						img.dual(src='img/util/dualRipplehq.png')
+	//- 						h1.hl 教授紹介
+	//- 					div.edgeGray
+	//- 					#profView
+	//- 						#profloading.loading
+	//- 							img(src='img/util/loading.gif')
+	//- 						#professor
+	//- 							#imgprof 
+	//- 								img#portProf
+	//- 							#txtprof
+	//- 								#position 
+	//- 								#nameProf
+	//- 								#profLine
+	//- 								#contProf
+	//- 				.clSp.betblankM
+	//- 				#works
+	//- 					a.anchor(name='works')
+	//- 					div.accent 
+	//- 						img.dual(src='img/util/dualRipplehq.png')
+	//- 						h1.hl 個人作品紹介
+	//- 					#workControl
+	//- 						ul#togglesemi
+	//- 							li.clickable 後藤ゼミ
+	//- 							li.clickable 齋藤ゼミ
+	//- 							li.clickable 白井ゼミ
+	//- 							li.clickable 陣内ゼミ
+	//- 							li.clickable 寺山ゼミ
+	//- 							li.clickable 西本ゼミ
+	//- 							li.clickable キューゼミ
+	//- 							li.clickable 古堅ゼミ
+	//- 							li.clickable 本田ゼミ
+	//- 							li.clickable 大学院
+	//- 					div.edgeGray
+	//- 					#workView
+	//- 						#semiName
+	//- 							//- img#ripple(src='img/util/dualRipplehq.png')
+	//- 							div#profName 後藤ゼミ
+	//- 						#worksloading.loading
+	//- 							img(src='img/util/loading.gif')
+	//- 						#workslist
+
+	//- 							ul#thumbnails
+									
+	//- 				.clSp.betblankM
+	//- 				#access
+	//- 					a.anchor(name='access') 
+	//- 					div.accent 
+	//- 						img.dual(src='img/util/dualRipplehq.png')
+	//- 						h1.hl アクセス
+	//- 					div.edgeGray.addbottom
+	//- 					#mapContainer
+	//- 						#mapImage
+	//- 							a.thumbs(href='#',data-featherlight="#flmap")
+	//- 								img.route(src='img/access/map.png')
+	//- 						//- #vertLine
+	//- 						#mapText
+	//- 							img.explain(src='img/access/explanation.png')
+	//- 			.clSp.betblankM
+	//- 			footer
+	//- 				#footerbox
+	//- 					#footersns
+	//- 					p#vcdlab 
+	//- 						a(href='http://vcd.musabi.ac.jp/web/')
+	//- 							武蔵野美術大学 視覚伝達デザイン学科研究室
+	//- 					p#copylight
+	//- 						| © 2016 Musashino Art University Department of Visual Communication Design
+
+	//- 	#hiddencontainer
+	//- 	#hiddenmap
+	//- 		#flmap.lightbox
+	//- 			img(src='img/access/map.png')
+	script(src='//cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js')
+	script(src='js/THREEx.FullScreen.js')
+	script(src='js/THREEx.WindowResize.js')
+	script(src='js/postprocessing/EffectComposer.js')
+	script(src='js/postprocessing/RenderPass.js')
+	script(src='js/postprocessing/ShaderPass.js')
+	script(src='js/postprocessing/MaskPass.js')
+	script(src='js/shaders/CopyShader.js')
+	script(src='js/shaders/DotScreenShader.js')
+	script(src='js/postprocessing/DotScreenPass.js')
+	script(src='js/index_stop.js')
+	script(src='js/monopoly.js')
+	script#__bs_script__(type='text/javascript').
+		//<![CDATA[
+			document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.11.0.js'><\\/script>".replace("HOST", location.hostname));
+		//]]>
+	//- script.
+	//- 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-71183317-1', 'auto');ga('send', 'pageview');
+	//- 	jQuery(document).ready(function($){
+	//- 	$("img").unveil(300);
+	//- 	});

@@ -1,0 +1,390 @@
+// general settings
+// base.stylus 
+// 構造を主に取り扱います
+
+body
+	position relative
+	font-family "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif
+	font-size .8em
+	background-color #fff
+	max-height 100%
+	// background-position center center
+	// background-repeat no-repeat
+	// background-attachment fixed
+	// background-size cover
+	// background-image url("../img/util/bgdot.png")
+	margin 0
+
+/* Let's get this party started */
+::-webkit-scrollbar
+	width: 2px;
+ 
+/* Track */
+::-webkit-scrollbar-track
+	// -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-border-radius: 5px
+	border-radius: 5px
+ 
+/* Handle */
+::-webkit-scrollbar-thumb 
+	-webkit-border-radius: 8px
+	border-radius: 8px
+	background: rgba(50,50,50,0.3) 
+
+// 便利なユーテリテー置き場
+
+.clSp
+	clear both
+.betweenblank
+	height 200px
+.leftblank
+	margin-left 200px
+// .edgeLine
+// 	height 1px
+// 	margin 80px 20px
+// 	background-color #666
+.edgeGray
+	height 1px
+	margin 0px 40px
+	background-color #ddd
+
+.loading
+	width 200px
+	height 200px
+	position absolute
+	top 150px
+	left 0
+	right 0 
+	margin auto
+	background-color rgba(255,255,255,0.8)
+	& > img
+		position absolute
+		width 35px
+		height 35px
+		top 0
+		bottom 0
+		left 0
+		right 0 
+		margin auto
+
+.accent
+	padding 60px 0px
+	margin-bottom 55px
+	position relative
+	vertical-align middle
+	& > *
+		position absolute
+		display inline
+		// margin-left 60px
+
+.hl
+	margin-left 25%
+
+//背景の波打つwebgl
+div#Wave
+	position fixed
+	display block
+	left 0
+	z-index 1
+div#Wave_stop
+	// position fixed
+	// display block
+	left 0
+	z-index 1
+	width 4000px
+	height 4000px
+
+//側、必要あるのかないのかわからない
+// div#containerWrapper
+// 	width 1100px
+// 	position absolute
+// 	left 0
+// 	right 0
+// 	margin auto
+// 	overflow: visible
+// 	-webkit-transition all 1s
+// 	-moz-transition all 1s
+// 	-ms-transition all 1s
+// 	-o-transition all 1s
+// 	transition all 1s
+// 	opacity 1
+// 	z-index 11
+// 	&:hover
+// 		opacity 1
+// 本来のコンテナー
+div#container
+	width 1100px
+	z-index 12
+
+// 今回の御三家、topとleftcolumunとmiddlecolumnくん
+div#top
+	width 1100px
+	height 700px
+	position: absolute
+	margin 0
+	top 0
+	background-color rgba(255,255,255,0.8)
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+78,e5e5e5+100&0.8+67,0.8+78,0+100 */
+	background  -moz-linear-gradient(top,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 78%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+	background  -webkit-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 78%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background  linear-gradient(to bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	// filter  progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#00e5e5e5',GradientType=0 ); /* IE6-9 */
+	z-index 15
+	// -webkit-transition all 1s
+	// -moz-transition all 1s
+	// -ms-transition all 1s
+	// -o-transition all 1s
+	// transition all 1s
+	// &:hover
+	// 	background-color rgba(0,0,0,1)
+
+
+div#Lcol
+	position fixed
+	float left
+	width 20%
+	max-width 170px
+	height 25%
+	top 0
+	bottom 0
+	margin auto
+	z-index 20
+
+div#Mcol
+	margin-top 90%
+	position absolute
+	width 1100px
+
+
+
+
+// top内部のやつら
+div#titlecontainer
+	height 25%
+	top 0
+	bottom 0
+	margin-left 200px
+	padding-left 30px
+
+div#title
+div#callAs
+	margin-top 40px
+// H=128px,200px,120px,196pxがデフォルト
+img.title
+	height 64px
+img.official
+	height 100px
+	margin-right 20px
+img.session
+	margin-right 20px
+
+// Lcol内部のやつら
+#navContainer
+	position relative
+	width 100%
+	height 100%
+
+#pointerL
+	position absolute
+	vertical-align center
+	// margin 6% 0%
+	height 88%
+	width 27px
+	opacity 0.5
+	// background-color #000
+	border-right dotted 1px #333
+ul#navbar
+	position absolute
+	margin 0
+	opacity 0.5
+	// padding 5px
+	& >li.nav
+		// background url(../img/util/dualRipple.png) left no-repeat 
+		// list-style-type none
+		// text-indent 25px
+		vertical-align sub
+		margin-bottom 20px
+	& >li.last
+		margin-bottom 0px
+
+
+.navselect
+	// margin-left -20px
+	// border-bottom 2px
+	text-decoration underline
+
+// Mcol内部のやつら
+div#rightcolumn
+	position relative
+	max-width 900px
+	width 80%
+	margin-left 20%
+
+// Mcol内のユーテリテー	
+div#profControl
+div#workControl
+	// background-color rgba(245,245,245,0.5)
+	padding 10px 0px
+	& *
+		vertical-align middle
+ul#toggleprof
+ul#togglesemi
+	// display inline
+	text-align center
+	& > li
+		display inline
+		margin 10px 6px
+
+
+div#profView
+div#workView
+	// padding 100px 0px
+	// margin auto
+	// width 90%
+	// width culc(100%-200px)
+	position relative
+	& > li
+		display block
+
+li.selected
+	text-decoration underline
+
+
+// Mcolの主力四天王 intro profssors works access   
+div#intro
+	margin-top 0%
+	width 100%
+	height 100%
+	position relative
+	background-color rgba(255,255,255,0.6)
+	z-index 20
+
+div#concept
+	width 80%
+	margin-left 10%
+
+p#main
+	font-size 2em
+p#sub
+	line-height 170%
+div#farewell
+	// -webkit-column-count 2
+	// -moz-column-count 2
+	// column-count 2
+	line-height 170%
+	text-indent 1em
+
+div#oration
+	width 80%
+	margin 0 10%
+p#signature
+	float right
+
+
+// Mcolの主力四天王professors
+div#professors
+	position relative
+	background-color rgba(255,255,255,0.6)
+	// background-color #228
+	height 100%
+	font-size 1em
+
+div#professor
+	width 100%
+	margin 0%
+	// height 600px
+	overflow-x visible
+div#imgprof
+	width 30%
+	// height 100%
+	padding 0px 30px
+img#portProf
+	width 100%
+
+// div#txtprof
+
+#position
+	font-family "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif
+
+#nameProf
+	font-family "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif
+	font-size 2em
+#profLine
+	height 1px
+	margin 30px 5px
+	// margin-left 
+	background-color #ddd
+#contProf
+	line-height 150%
+	text-indent 1em
+
+// Mcolの主力四天王works
+div#works
+	position relative
+	background-color rgba(255,255,255,0.6)
+	overflow-y: visible
+	padding-bottom 60px
+
+// div#semiName
+// 	width 100%
+img#ripple
+	height 30px
+	display inline
+div#profName
+	font-size 2em
+	// margin-left 35%
+// img#ripple
+// 	height 20px
+// 	display inline
+// span#profName
+// 	font-size 2em
+// 	margin-left 10px
+li.box
+	position relative
+	list-style-type none
+	float left
+	width 110px
+	margin 3px
+
+div.caption
+	position absolute
+	width 100%
+	height 100%
+	overflow-y: scroll
+	background-color rgba(255,255,255,0.9)
+	font-size .9em
+	-webkit-transition all 1s
+	-moz-transition all 1s
+	-ms-transition all 1s
+	-o-transition all 1s
+	transition all 1s
+
+// Mcolの主力四天王access
+div#access
+	position relative
+	background-color rgba(255,255,255,0.6)
+	height 100%
+	// background-color #fff
+	// & > div
+	// 	display inline
+	// 	width 30%
+#mapImage
+#mapText
+	width 50%
+	display: inline-block
+img.route
+	width 90%
+	margin 5%
+img.explain
+	width 90%
+	margin 5%
+
+
+// 御三家とは独立の、横幅フルな使っているfooterくん
+footer
+	width 100%
+	padding 60px 0px
+	margin auto
+	margin-bottom 100px
+	background-color #fff
+	text-align center

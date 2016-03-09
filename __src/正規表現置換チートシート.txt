@@ -1,0 +1,7 @@
+//ゼミidをもとにportrait.pngを設定、ゼミナンバーと教授名フォルダを毎回いじる必要がある
+data\(semi='3',id='([0-9]+)'\)\n\t\tport\x20
+data\(semi='3',id='$1'\)\n\t\tport\x20img\/jinnouchi\/$1\/portrait.png
+
+//portrait.pngを元にdetail.pngを設定、一発で全員分できる
+port\x20(.*)([0-9]+)\/portrait(.*)\n\t\tdetail\x20
+port\x20$1$2\/portrait$3\n\t\tdetail\x20$1$2\/detail$3

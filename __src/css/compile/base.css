@@ -1,0 +1,320 @@
+body {
+  position: relative;
+  font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  font-size: 0.8em;
+  background-color: #fff;
+  max-height: 100%;
+  margin: 0;
+}
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 2px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background: rgba(50,50,50,0.3);
+}
+.clSp {
+  clear: both;
+}
+.betweenblank {
+  height: 200px;
+}
+.leftblank {
+  margin-left: 200px;
+}
+.edgeGray {
+  height: 1px;
+  margin: 0px 40px;
+  background-color: #ddd;
+}
+.loading {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba(255,255,255,0.8);
+}
+.loading > img {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.accent {
+  padding: 60px 0px;
+  margin-bottom: 55px;
+  position: relative;
+  vertical-align: middle;
+}
+.accent > * {
+  position: absolute;
+  display: inline;
+}
+.hl {
+  margin-left: 25%;
+}
+div#Wave {
+  position: fixed;
+  display: block;
+  left: 0;
+  z-index: 1;
+}
+div#Wave_stop {
+  left: 0;
+  z-index: 1;
+  width: 4000px;
+  height: 4000px;
+}
+div#container {
+  width: 1100px;
+  z-index: 12;
+}
+div#top {
+  width: 1100px;
+  height: 700px;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  background-color: rgba(255,255,255,0.8);
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+78,e5e5e5+100&0.8+67,0.8+78,0+100 */
+  background: -moz-linear-gradient(top, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 78%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 78%, rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  z-index: 15;
+}
+div#Lcol {
+  position: fixed;
+  float: left;
+  width: 20%;
+  max-width: 170px;
+  height: 25%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 20;
+}
+div#Mcol {
+  margin-top: 90%;
+  position: absolute;
+  width: 1100px;
+}
+div#titlecontainer {
+  height: 25%;
+  top: 0;
+  bottom: 0;
+  margin-left: 200px;
+  padding-left: 30px;
+}
+div#title,
+div#callAs {
+  margin-top: 40px;
+}
+img.title {
+  height: 64px;
+}
+img.official {
+  height: 100px;
+  margin-right: 20px;
+}
+img.session {
+  margin-right: 20px;
+}
+#navContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#pointerL {
+  position: absolute;
+  vertical-align: center;
+  height: 88%;
+  width: 27px;
+  opacity: 0.5;
+  border-right: dotted 1px #333;
+}
+ul#navbar {
+  position: absolute;
+  margin: 0;
+  opacity: 0.5;
+}
+ul#navbar >li.nav {
+  vertical-align: sub;
+  margin-bottom: 20px;
+}
+ul#navbar >li.last {
+  margin-bottom: 0px;
+}
+.navselect {
+  text-decoration: underline;
+}
+div#rightcolumn {
+  position: relative;
+  max-width: 900px;
+  width: 80%;
+  margin-left: 20%;
+}
+div#profControl,
+div#workControl {
+  padding: 10px 0px;
+}
+div#profControl *,
+div#workControl * {
+  vertical-align: middle;
+}
+ul#toggleprof,
+ul#togglesemi {
+  text-align: center;
+}
+ul#toggleprof > li,
+ul#togglesemi > li {
+  display: inline;
+  margin: 10px 6px;
+}
+div#profView,
+div#workView {
+  position: relative;
+}
+div#profView > li,
+div#workView > li {
+  display: block;
+}
+li.selected {
+  text-decoration: underline;
+}
+div#intro {
+  margin-top: 0%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(255,255,255,0.6);
+  z-index: 20;
+}
+div#concept {
+  width: 80%;
+  margin-left: 10%;
+}
+p#main {
+  font-size: 2em;
+}
+p#sub {
+  line-height: 170%;
+}
+div#farewell {
+  line-height: 170%;
+  text-indent: 1em;
+}
+div#oration {
+  width: 80%;
+  margin: 0 10%;
+}
+p#signature {
+  float: right;
+}
+div#professors {
+  position: relative;
+  background-color: rgba(255,255,255,0.6);
+  height: 100%;
+  font-size: 1em;
+}
+div#professor {
+  width: 100%;
+  margin: 0%;
+  overflow-x: visible;
+}
+div#imgprof {
+  width: 30%;
+  padding: 0px 30px;
+}
+img#portProf {
+  width: 100%;
+}
+#position {
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+#nameProf {
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  font-size: 2em;
+}
+#profLine {
+  height: 1px;
+  margin: 30px 5px;
+  background-color: #ddd;
+}
+#contProf {
+  line-height: 150%;
+  text-indent: 1em;
+}
+div#works {
+  position: relative;
+  background-color: rgba(255,255,255,0.6);
+  overflow-y: visible;
+  padding-bottom: 60px;
+}
+img#ripple {
+  height: 30px;
+  display: inline;
+}
+div#profName {
+  font-size: 2em;
+}
+li.box {
+  position: relative;
+  list-style-type: none;
+  float: left;
+  width: 110px;
+  margin: 3px;
+}
+div.caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: rgba(255,255,255,0.9);
+  font-size: 0.9em;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+div#access {
+  position: relative;
+  background-color: rgba(255,255,255,0.6);
+  height: 100%;
+}
+#mapImage,
+#mapText {
+  width: 50%;
+  display: inline-block;
+}
+img.route {
+  width: 90%;
+  margin: 5%;
+}
+img.explain {
+  width: 90%;
+  margin: 5%;
+}
+footer {
+  width: 100%;
+  padding: 60px 0px;
+  margin: auto;
+  margin-bottom: 100px;
+  background-color: #fff;
+  text-align: center;
+}

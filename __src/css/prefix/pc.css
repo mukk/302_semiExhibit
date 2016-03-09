@@ -1,0 +1,361 @@
+body {
+  position: relative;
+  font-size: 0.8em;
+  background-color: #fff;
+  max-height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("../img/util/bgdot.png");
+  background-repeat: repeat;
+  overflow: visible;
+  margin: 0 auto;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+.clSp {
+  clear: both;
+}
+.betblankM {
+  height: 50px;
+}
+.leftblank {
+  margin-left: 200px;
+}
+.edgeLine {
+  height: 1px;
+  margin: 160px 50px 20px;
+  background-color: #aaa;
+}
+.edgeConcept {
+  position: relative;
+  top: 160px;
+  margin: 160px 50px 80px;
+}
+.loading {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba(255,255,255,0.8);
+}
+.loading > img {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.accent {
+  text-align: center;
+  margin: auto;
+}
+.accent > img {
+  width: 40px;
+}
+.accentConcept {
+  text-align: left;
+  margin: 12% 0%;
+  margin-left: 7%;
+}
+.accentConcept>img {
+  width: 40px;
+}
+img.triple {
+  margin: 60px;
+}
+.accentKanji {
+  text-align: left;
+  margin: 0% 0% 6%;
+  margin-left: 8%;
+}
+.accentKanji>img {
+  width: 30px;
+}
+img.kanji {
+  margin: 0px 60px;
+}
+img.dual {
+  margin-left: -100px;
+}
+.hl {
+  margin: 0%;
+  margin-left: -50px;
+}
+div#containerWrapper {
+  width: 1100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: visible;
+  transition: all 1s;
+  z-index: 11;
+  opacity: 0;
+}
+div#containerWrapper:hover {
+  opacity: 1;
+}
+div#container {
+  width: 1100px;
+  z-index: 12;
+}
+div#top {
+  width: 1100px;
+  height: 700px;
+  position: absolute;
+  margin: 0;
+  padding-top: 200px;
+  background-color: rgba(255,255,255,0.8);
+  z-index: 15;
+}
+div#Lcol {
+  position: fixed;
+  float: left;
+  width: 160px;
+  max-width: 160px;
+  height: 175px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 20;
+}
+div#Mcol {
+  margin-top: 70%;
+  position: absolute;
+  width: 1100px;
+}
+div#titlecontainer {
+  height: 25%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+div#title,
+div#callAs,
+div#session {
+  margin-top: 40px;
+}
+img.title {
+  height: 42.666666666666664px;
+}
+img.official {
+  height: 66.66666666666667px;
+  margin-right: 20px;
+}
+img.Pc {
+  height: 40px;
+}
+img.Sp {
+  display: none;
+}
+ul#navbar {
+  margin: 0;
+  opacity: 0.5;
+}
+ul#navbar > li.nav {
+  margin-bottom: 20px;
+}
+ul#navbar > li.last {
+  margin-bottom: 0px;
+}
+#pointerL {
+  position: absolute;
+  vertical-align: center;
+  margin: 6% 0%;
+  height: 88%;
+  width: 27px;
+  opacity: 0.5;
+  border-right: dotted 1px #333;
+}
+.navselect {
+  text-decoration: underline;
+}
+div#rightcolumn {
+  position: relative;
+  max-width: 900px;
+  width: 80%;
+  margin-left: 20%;
+}
+div#profControl,
+div#workControl {
+  padding: 10px 0px;
+  maegin: 30px 0px;
+  min-height: 50px;
+}
+div#profControl *,
+div#workControl * {
+  vertical-align: middle;
+}
+ul#toggleprof,
+ul#togglesemi {
+  text-align: center;
+}
+ul#toggleprof > li,
+ul#togglesemi > li {
+  display: inline;
+  margin: 10px 6px;
+}
+div#profView,
+div#workView {
+  width: 100%;
+  margin-top: 70px;
+  overflow: visible;
+  position: relative;
+}
+div#profView > li,
+div#workView > li {
+  display: block;
+}
+li.selected {
+  text-decoration: underline;
+}
+div#intro {
+  margin-top: 0%;
+  padding-bottom: 0px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(254,255,255,0.7);
+  z-index: 13;
+}
+div#concept {
+  width: 60%;
+  margin: 0% 10% 5% 30%;
+}
+p#main {
+  font-size: 1.5em;
+}
+p#sub {
+  line-height: 2em;
+}
+div#farewell {
+  line-height: 170%;
+  text-indent: 1em;
+}
+div#oration {
+  width: 60%;
+  margin: 0% 10% 5% 30%;
+  padding-bottom: 160px;
+}
+p#signature {
+  float: right;
+}
+div#professors {
+  position: relative;
+  background-color: rgba(254,255,255,0.7);
+  padding-bottom: 100px;
+  height: 100%;
+  font-size: 1em;
+}
+div#professor {
+  width: 100%;
+  margin: 50px 0%;
+  height: 600px;
+  overflow-x: visible;
+}
+div#imgprof {
+  width: 20%;
+  margin: 0% 3% 0% 2%;
+  float: left;
+  height: 100%;
+  padding: 0px 50px 0px 30px;
+}
+img#portProf {
+  width: 100%;
+}
+div#txtprof {
+  position: absolute;
+  width: 60%;
+  margin: 0% 10% 5% 30%;
+}
+#position {
+  margin-bottom: 20px;
+}
+#nameProf {
+  font-size: 2em;
+}
+#contProf {
+  line-height: 150%;
+  text-indent: 1em;
+}
+div#works {
+  position: relative;
+  background-color: rgba(254,255,255,0.7);
+  padding-bottom: 100px;
+  overflow-y: visible;
+  padding-bottom: 60px;
+}
+div#semiName {
+  width: 92%;
+  margin-left: 8%;
+  margin-bottom: 50px;
+}
+img#ripple {
+  height: 30px;
+  display: inline;
+}
+div#profName {
+  font-size: 2em;
+  margin-left: 0%;
+}
+li.box {
+  position: relative;
+  list-style-type: none;
+  float: left;
+  width: 110px;
+  margin: 9px;
+}
+div.caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+  opacity: 1;
+  overflow-y: scroll;
+  background-color: rgba(255,255,255,0.6);
+  font-size: 0.9em;
+  transition: all 1s;
+}
+div#access {
+  position: relative;
+  background-color: rgba(254,255,255,0.7);
+  padding-bottom: 100px;
+  height: 100%;
+}
+#mapContainer {
+  width: 100%;
+}
+.addbottom {
+  margin-bottom: 40px;
+}
+#mapImage,
+#mapText {
+  width: 49%;
+  display: inline-block;
+}
+img.route {
+  width: 90%;
+  margin: 5%;
+}
+img.explain {
+  width: 90%;
+  margin: 5%;
+}
+footer {
+  width: 100%;
+  padding: 30px 0px 10px;
+  margin: auto;
+  background-color: #fff;
+  text-align: center;
+}

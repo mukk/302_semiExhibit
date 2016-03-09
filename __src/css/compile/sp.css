@@ -1,0 +1,419 @@
+body {
+  font-size: 0.5em;
+}
+#Wave {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("../img/util/bgdot_sp.png");
+  background-repeat: repeat;
+}
+.clSpsp {
+  clear: both;
+}
+.betblankMsp {
+  height: 100px;
+}
+.leftblank {
+  margin-left: 100px;
+}
+.edgeLine {
+  height: 1px;
+  margin: 80px 15px 80px;
+  background-color: #666;
+}
+.edgeConcept {
+  position: relative;
+  top: 80px;
+}
+.loading {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba(255,255,255,0.8);
+}
+.loading > img {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.accent {
+  margin: 0px;
+  padding-top: 30px;
+}
+.accent>img {
+  width: 35px;
+  margin-left: 30px;
+  margin-top: 7px;
+}
+.accentKanji {
+  margin-top: -60px;
+}
+.hl {
+  margin-left: 100px;
+}
+div#containerWrapper {
+  width: 100%;
+  position: absolute;
+  padding: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  overflow: visible;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  z-index: 11;
+}
+div#container {
+  width: 100%;
+  z-index: 12;
+}
+div#top {
+  width: 100%;
+  position: absolute;
+  margin: 0px;
+  padding-top: 200px;
+  background-color: rgba(255,255,255,0.5);
+  z-index: 15;
+}
+div#Lcol {
+  position: fixed;
+  float: left;
+  width: 20%;
+  height: 190px;
+  max-width: 200px;
+  margin: auto;
+  z-index: 20;
+}
+div#Mcol {
+  margin-top: 120%;
+  position: relative;
+  width: 100%;
+}
+div#titlecontainer {
+  height: 45%;
+  margin-top: 350px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+div#title,
+div#callAs {
+  margin: 0px;
+  margin-left: 24%;
+  margin-bottom: 30px;
+}
+img.title {
+  height: 30px;
+}
+img.official {
+  height: 47px;
+  margin-top: 10px;
+}
+img.Pc {
+  display: none;
+}
+img.Sp {
+  margin-top: 20px;
+  height: 46px;
+}
+#navContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#pointerL {
+  position: absolute;
+  top: 2%;
+  height: 92%;
+  width: 8px;
+  opacity: 0.5;
+  border-right: dotted 1px #333;
+}
+ul#navbar {
+  vertical-align: center;
+  margin: 0;
+  opacity: 0.8;
+}
+ul#navbar > li.nav {
+  margin-left: -20px;
+  text-indent: -5px;
+  margin-bottom: 25px;
+}
+ul#navbar > li.last {
+  margin-bottom: 0px;
+}
+.navselect {
+  text-decoration: underline;
+}
+div#rightcolumn {
+  position: relative;
+  max-width: 600px;
+  width: 76%;
+  margin-left: 24%;
+}
+div#profControl,
+div#workControl {
+  position: relative;
+  margin: 0px 0px;
+  padding-top: 50px 0px;
+}
+ul#toggleprof,
+ul#togglesemi {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(245,245,245,0.5);
+  padding: 0px;
+  margin: 0px;
+}
+ul#toggleprof > li,
+ul#togglesemi > li {
+  display: inline-block;
+  text-align: center;
+  width: 21%;
+  margin: 2%;
+}
+div#profView,
+div#workView {
+  position: relative;
+  padding: 5px 0px;
+  margin: auto;
+  margin-top: 40px;
+  width: 100%;
+}
+div#profView > li,
+div#workView > li {
+  display: block;
+}
+li.selected {
+  text-decoration: underline;
+}
+div#intro {
+  margin: 0%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(255,255,255,0.5);
+  z-index: 20;
+}
+div#concept {
+  width: 80%;
+  margin: 0% 10%;
+}
+p#main {
+  font-size: 2em;
+}
+p#sub {
+  line-height: 170%;
+}
+div#oration {
+  width: 80%;
+  margin: 0% 10%;
+  height: 400px;
+  overflow: scroll;
+}
+div#farewell {
+  line-height: 170%;
+  text-indent: 1em;
+}
+p#signature {
+  float: right;
+}
+div#professors {
+  position: relative;
+  background-color: rgba(255,255,255,0.5);
+  height: 100%;
+  font-size: 1em;
+}
+div#professor {
+  width: 90%;
+  margin: 0% 0%;
+  margin-left: 10%;
+  overflow-x: visible;
+}
+div#imgprof {
+  max-width: 240px;
+  width: 60%;
+  margin: 0% 20%;
+  margin: auto;
+}
+img#portProf {
+  width: 100%;
+}
+#position {
+  margin-bottom: 10px;
+}
+#nameProf {
+  font-size: 2em;
+}
+#contProf {
+  line-height: 150%;
+  text-indent: 1em;
+  width: 90%;
+  margin-right: 10%;
+}
+div#works {
+  position: relative;
+  background-color: rgba(255,255,255,0.5);
+  overflow-y: visible;
+  padding: 0;
+  padding-bottom: 60px;
+}
+img#ripple {
+  height: 20px;
+  display: inline;
+}
+span#profName {
+  font-size: 2em;
+  margin-left: 10px;
+}
+ul#thumbnails {
+  padding: 3px;
+}
+li.box {
+  position: relative;
+  list-style-type: none;
+  float: left;
+  width: 55px;
+  margin: 1px;
+}
+.point {
+  width: 55px;
+}
+.poly {
+  width: 55px;
+}
+div.caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+  opacity: 1;
+  overflow-y: scroll;
+  background-color: rgba(255,255,255,0.6);
+  font-size: 0.2em;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+p.name,
+p.title {
+  font-size: 0.4em;
+}
+div#access {
+  position: relative;
+  background-color: rgba(255,255,255,0.5);
+  height: 100%;
+}
+#mapImage,
+#mapText {
+  width: 95%;
+  display: inline-block;
+}
+img.route {
+  width: 90%;
+  margin: 5%;
+}
+img.explain {
+  width: 70%;
+  margin: 5%;
+}
+footer {
+  width: 100%;
+  padding: 20px 0px 0px;
+  margin: auto;
+  margin-bottom: 0px;
+  background-color: #fff;
+  text-align: center;
+}
+.stabilizer {
+  max-width: 1000px;
+  width: 95%;
+  padding: 0;
+  margin: 0;
+  margin: auto;
+}
+.flRight {
+  float: right;
+  width: 48%;
+  display: block;
+}
+.flLeft {
+  float: left;
+  width: 48%;
+}
+.flBottom {
+  float: left;
+  display: block;
+  width: 100%;
+}
+img.portStud {
+  float: none;
+  max-height: 350px;
+  width: 90%;
+  margin: auto;
+}
+.tag {
+  width: 100%;
+  max-height: 400px;
+  vertical-align: text-bottom;
+}
+.nameStud,
+.titleStud {
+  font-size: 1.2em;
+}
+.mediaStud {
+  font-size: 0.9em;
+}
+.cont {
+  padding-top: 30px;
+}
+.descStud {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+  margin: 30px 10px;
+  line-height: 150%;
+  text-indent: 1em;
+}
+img.detailStud {
+  max-width: 500px;
+  width: 100%;
+}
+@media only screen and (orientation: landscape) {
+  div#container {
+    width: 80%;
+    height: 100%;
+  }
+  #Wave {
+    display: none;
+  }
+  div#callAs {
+    width: 38%;
+  }
+  div#detail {
+    width: 38%;
+  }
+  .descStud {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}

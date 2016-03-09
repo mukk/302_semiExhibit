@@ -270,16 +270,18 @@ module.exports = (grunt) ->
 			"js": (path) ->
 				['newer:uglify']
 
-		gitcommit :
-			target :
-				options :
-					cwd : ""
-					message :  '000'
+		gitadd :
+			task :
 				files :
-					src : ["<%=dir.src%>/**"]
-					expand : true
-					cwd : ""
+					src : ["<%=dir.src%>/**"]	
 
+		gitcommit :
+			options :
+				message :  grunt.option('M')
+				#message : 'どうですか'
+			files :
+				src : ["<%=dir.src%>/**"]
+				expand : true
 
 
 		#使えるらしい、パッケージのバージョンアップに特化したやつ　$ grunt release:minor　とかで叩くらしい
@@ -303,7 +305,7 @@ module.exports = (grunt) ->
 
 	grunt.loadNpmTasks 'grunt-contrib-connect'
 	grunt.loadNpmTasks 'grunt-contrib-livereload'
-	grunt.loadNpmTasks 'grunt-browser-sync'
+	#grunt.loadNpmTasks 'grunt-browser-sync'
 
 	grunt.loadNpmTasks 'grunt-este-watch'
 	grunt.loadNpmTasks 'grunt-newer'

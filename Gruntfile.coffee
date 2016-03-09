@@ -270,6 +270,18 @@ module.exports = (grunt) ->
 			"js": (path) ->
 				['newer:uglify']
 
+		gitcommit :
+			target :
+				options :
+					cwd : ""
+					message :  '000'
+				files :
+					src : ["<%=dir.src%>/**"]
+					expand : true
+					cwd : ""
+
+
+
 		#使えるらしい、パッケージのバージョンアップに特化したやつ　$ grunt release:minor　とかで叩くらしい
 		release:
 			options:

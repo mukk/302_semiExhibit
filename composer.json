@@ -1,0 +1,11 @@
+{
+
+    "config": {
+      "vendor-dir": "./_public/lib_composer"
+    },
+    
+    "comment":"ここにライブラリを追加、削除し、適宜 $ composer update　を叩く。そうするとこのjsonファイル通りにlib_composerからinstall、removeを実行してくれます。",
+    "require": {
+                "twig/twig": "~1.0"
+    }
+}

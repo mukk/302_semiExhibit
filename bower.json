@@ -1,0 +1,34 @@
+{
+  "name": "kkoregatsu.com",
+  "version": "2.1.0",
+  "authors": [
+    "mukk <kkoregatsu@gmail.com>"
+  ],
+  "description": "my portfolio sites",
+  "main": "index.js",
+  "keywords": [
+    "byiafpt1"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "three.js": "*",
+    "jquery": "~2.1.3",
+    "d3": "~3.5.5",
+    "mustache": "~1.0.0",
+    "bootstrap": "~3.3.2",
+    "bootstrap-stylus": "~4.0.2",
+    "scrollmagic": "~2.0.0",
+    "gsap": "~1.15.1",
+    "respond": "~1.4.2",
+    "lightbox2": "~2.7.1",
+    "featherlight": "~1.3.5"
+  }
+}

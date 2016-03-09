@@ -1,0 +1,25 @@
+structure
+
+body
+	top
+		title
+			name
+
+	main
+		concept
+			title
+			critic
+		work
+			person
+				data
+					name
+
+				work
+					caption
+						title
+						desc
+
+		access
+			
+	footer
+		copyright

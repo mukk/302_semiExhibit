@@ -238,10 +238,6 @@ ul#togglesemi
 
 div#profView
 div#workView
-	// padding 100px 0px
-	// margin auto
-	// width 90%
-	// width culc(100%-200px)
 	position relative
 	& > li
 		display block

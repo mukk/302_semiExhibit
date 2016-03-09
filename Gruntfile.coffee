@@ -270,6 +270,11 @@ module.exports = (grunt) ->
 			"js": (path) ->
 				['newer:uglify']
 
+<<<<<<< HEAD
+=======
+
+		# git関連のコマンド
+>>>>>>> wakaran
 		gitadd :
 			task :
 				files :
@@ -282,6 +287,10 @@ module.exports = (grunt) ->
 			files :
 				src : ["<%=dir.src%>/**"]
 				expand : true
+<<<<<<< HEAD
+=======
+				cwd : ""
+>>>>>>> wakaran
 
 
 		#使えるらしい、パッケージのバージョンアップに特化したやつ　$ grunt release:minor　とかで叩くらしい
